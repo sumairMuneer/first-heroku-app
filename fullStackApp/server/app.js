@@ -25,10 +25,10 @@ app.use(cookieParser());
 app.use('/', indexRouter)
 
 // if (process.env.NOVE_ENV === 'production') {
-    app.use(express.static('build'));
-    app.get('./*', (req, res) => {
-        res.sendFile(path.resolve(__dirname, 'build', 'index.html'))
-    })
+//     app.use(express.static('build'));
+//     app.get('./*', (req, res) => {
+//         res.sendFile(path.resolve(__dirname, 'build', 'index.html'))
+//     })
 // }
 
 app.listen(port, () => console.log(" server is running on port ", port));
