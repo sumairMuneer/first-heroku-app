@@ -1,0 +1,215 @@
+/*.content-main-container {*/
+/*    !*display: flex;*!*/
+/*    !*flex-direction: row;*!*/
+/*    !*width: 100%;*!*/
+/*    background-color: white;*/
+/*    !*padding: 36px 36px 12px;*!*/
+/*    padding: 15px;*/
+/*    font-family: helvetica-light;*/
+/*}*/
+
+.full-deal-main-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.deal-detail-outer-container {
+    background-color: #ffffff;
+    border: 0 solid transparent;
+    border-radius: 0.25rem;
+    box-shadow: 0 0.5rem 1rem 0 rgba(44, 51, 73, 0.1);
+    color: #1a2138;
+    font-family: Open Sans, sans-serif;
+    font-size: 0.9375rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+    margin-bottom: 1.875rem;
+    flex-grow: 1;
+}
+
+.full-deal-content-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.deal-detail-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 10px;
+    /*background-color: #ffffff;*/
+    /*box-shadow: 0 0.5rem 1rem 0 rgba(44, 51, 73, 0.1);*/
+    line-height: 1.25rem;
+    width: -webkit-fill-available;
+    max-width: 65%;
+    border-radius: 5px;
+}
+
+.deal-detail-container > div {
+    padding: 15px 0;
+}
+
+.company-industry-row {
+    display: flex;
+    /*justify-content: space-between;*/
+    align-items: flex-start;
+    padding: 10px 0;
+}
+
+.company-industry-col {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+.single-item-row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 7px;
+    word-break: break-all;
+}
+
+.investment-opportunity-container {
+    padding: 2px 0;
+    border-radius: 5px;
+    background: white;
+}
+
+.full-deal-video-container {
+    padding: 15px 10px 15px 20px;
+}
+
+.virtual-btn-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+    padding: 5px 35px 10px;
+    background: white;
+    box-shadow: 0 0.5rem 1rem 0 rgba(44, 51, 73, 0.1);
+
+}
+
+.virtual-btn-des  {
+    padding-top: 20px;
+    text-align: justify-all;
+    /*background-color: #ffffff;*/
+
+}
+
+.small-heading-style{
+    color: #1a2138;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    text-transform: capitalize;
+    padding-right: 5px;
+    word-break: keep-all !important;
+}
+
+
+
+
+.deal-type-with-header {
+
+    position: absolute;
+    top: 84px;
+    /* right: 25px; */
+    right: 70px;
+}
+
+.deal-type-with-header > div {
+    display: flex;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    background: #ff2008fa;
+    font-size: 14px;
+    line-height: 1;
+    padding: 0 20px;
+    border-radius: 0 8px 8px;
+    height: 43px;
+}
+
+.deal-type-with-header > div::after {
+    position: absolute;
+    height: 6px;
+    width: 10px;
+    left: -9px;
+    top: 0;
+    border-radius: 8px 0 0 0;
+    background: #ff2008;
+    content: ' ';
+}
+
+.mar-0 {
+    margin: 0 !important;
+}
+
+.blue-btn {
+    background-color: #3366ff;
+    font-size: 14px;
+    color: #ffffff;
+    padding: 5px 10px;
+    border: 1px solid #3366ff;
+    text-transform: uppercase;
+    border-radius: 0.25rem;
+    margin: 5px;
+}
+
+@media screen and (max-width: 900px) {
+    .full-deal-main-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .deal-type-with-header {
+        position: absolute;
+        top: 84px;
+        right: 40px;
+    }
+
+    .deal-detail-outer-container,
+    .investment-opportunity-container {
+        width: -webkit-fill-available;
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .company-industry-row {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .company-industry-col {
+        width: 100%;
+    }
+
+    .company-industry-row > div:first-child {
+        padding-bottom: 7px;
+    }
+
+    .deal-detail-container > div {
+        padding: 8px 0;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    .deal-type-with-header > div {
+        padding: 0 5px;
+    }
+
+}

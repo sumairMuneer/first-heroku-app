@@ -1,0 +1,10 @@
+.landing-page-main-container{
+    display: flex;
+    width: 75%;
+    flex-direction: column;
+    margin: 10% 13%;
+    overflow: hidden !important;
+    border: 1px solid white;
+    border-radius: 5px;
+    box-shadow: 0 0.5rem 1rem 0 rgba(44, 51, 73, 0.1);
+}
